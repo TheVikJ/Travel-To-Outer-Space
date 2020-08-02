@@ -1,9 +1,13 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/static/css/styles.css" />
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Travel To Outer Space</title>
   </head>
   <body>
@@ -22,7 +26,7 @@
 
       <!-- Here would fit our logo -->
       <span class="avatar"
-        ><img src="/static/images/avatar.png" alt="LOGO"
+        ><img src="{% static 'images/avatar.png' %}" alt="LOGO"
       /></span>
       <h1>
         Here you can find a brief wiki of some the coolest things related to
@@ -58,12 +62,12 @@
         <section class="thumbnails">
           <div>
             <a href="/static/images/fulls/01.jpg">
-              <img src="/static/images/fulls/01.jpg" alt="Planet Earth" />
+              <img src="{% static 'images/fulls/01.jpg' %}" alt="Planet Earth" />
               <h3>The planet Earth.</h3>
               <h4>This is our Home, but for how long ... ?</h4>
             </a>
             <a href="/static/images/fulls/02.jpg">
-              <img src="/static/images/fulls/02.jpg" alt="" />
+              <img src="{% static 'images/fulls/02.jpg' %|" alt="" />
               <h3>Curiosity Rover</h3>
               <h4>
                 Curiosity is one of the most ambitious missions of all humanity.
@@ -76,7 +80,7 @@
           </div>
           <div>
             <a href="/static/images/fulls/03.jpg">
-              <img src="/static/images/fulls/03.jpg" alt="" />
+              <img src="{% static 'images/fulls/03.jpg' %}" alt="" />
               <h3>The Space Shuttle</h3>
               <h4>
                 NASA's Space Shuttle carried people into space. The shuttle flew
@@ -88,7 +92,7 @@
               </h4>
             </a>
             <a href="/static/images/fulls/04.jpg">
-              <img src="/static/images/fulls/04.jpg" alt="" />
+              <img src="{% static 'images/fulls/04.jpg' %}" alt="" />
               <h3>Sputnik</h3>
               <h4>
                 The Sputnik 1 spacecraft was the first artificial satellite
@@ -100,7 +104,7 @@
               </h4>
             </a>
             <a href="/static/images/fulls/05.jpg">
-              <img src="/static/images/fulls/05.jpg" alt="" />
+              <img src="{% static 'images/fulls/05.jpg' %}" alt="" />
               <h3>Milky Way</h3>
               <h4>
                 The Milky Way is a barred spiral galaxy, about a hundred
@@ -111,7 +115,7 @@
           </div>
           <div>
             <a href="/static/images/fulls/06.jpg">
-              <img src="/static/images/fulls/06.jpg" alt="" />
+              <img src="{% static 'images/fulls/06.jpg' %}" alt="" />
               <h3>Black hole</h3>
               <h4>
                 A black hole is a place in space where gravity pulls so much
@@ -122,7 +126,7 @@
               </h4>
             </a>
             <a href="/static/images/fulls/07.jpg">
-              <img src="/static/images/fulls/07.jpg" alt="" />
+              <img src="{% static 'images/fulls/07.jpg' %}" alt="" />
               <h3>The International Space Station</h3>
               <h4>
                 The International Space Station is a large spacecraft. It orbits
@@ -148,9 +152,12 @@
     </div>
 
     <!-- Scripts -->
-    <script src="/static/js/jquery.min.js"></script>
-    <script src="/static/js/jquery.poptrox.min.js"></script>
-    <script src="/static/js/main.js"></script>
-    <script src="/static/js/skel.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="../static/js/jquery.min.js"></script>
+    <script src="../static/js/jquery.poptrox.min.js"></script>
+    <script src="../static/js/main.js"></script>
+    <script src="../static/js/skel.min.js"></script>
   </body>
 </html>
