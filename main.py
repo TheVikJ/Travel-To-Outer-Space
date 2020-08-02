@@ -7,6 +7,11 @@ def responses() :
     print(response)
 
 
+def isswhere() :
+    url = "https://api.wheretheiss.at/v1/satellites/25544"
+    response = requests.get(url).json()
+    print(response)
+
 
 if __name__ == "__main__":
-    responses()
+    isswhere()
